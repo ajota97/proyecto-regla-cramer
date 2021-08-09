@@ -1,0 +1,79 @@
+<div class="alert alert-danger col-md-5" *ngIf="status=='error'" style="margin-left: auto;
+margin-right: auto;">
+    Matriz invalida, el determinante no puede ser igual a cero, introduzca nuevos valores.
+</div>
+
+<body>
+    <header>
+        <h1>
+            Regla de Cramer
+        </h1>
+
+    </header>
+    <section>
+        <p>
+            Esta aplicación resuelve sistemas de ecuaciones lineales de 3x3 utilizando el método de la relga de Cramer.
+        </p>
+        <form name="system" class="matrix" #matrizForm="ngForm" (ngSubmit)="onSubmit()">
+
+            <span class="Estilo2">
+            <input type="number" name="x1" #x1="ngModel" [(ngModel)]="Matriz[0][0]">
+
+             <div class= mn>x +</div>
+            <input type="number" name="y1" #y1="ngModel" [(ngModel)]="Matriz[0][1]">
+
+            <div class= mn>y +</div> 
+            <input type="number" name="z1" #z1="ngModel" [(ngModel)]="Matriz[0][2]">
+
+            <div class= mn>z =</div>
+            <input type="number" name="a1" #a1="ngModel" [(ngModel)]="Matriz[0][3]" >
+
+            <br>
+            <br>
+            <input type="number" name="x2" #x2="ngModel" [(ngModel)]="Matriz[1][0]">
+
+            <div class= mn>x +</div>
+            <input type="number" name="y2" #y2="ngModel" [(ngModel)]="Matriz[1][1]">
+
+            <div class= mn>y +</div>
+            <input type="number" name="z2" #z2="ngModel" [(ngModel)]="Matriz[1][2]">
+
+            <div class= mn>z =</div>
+            <input type="number" name="a2" #a2="ngModel" [(ngModel)]="Matriz[1][3]">
+
+            <br>
+            <br>
+            <input type="number" name="x3" #x3="ngModel" [(ngModel)]="Matriz[2][0]">
+
+            <div class= mn>x +</div>
+            <input type="number" name="y3" #y3="ngModel" [(ngModel)]="Matriz[2][1]">
+
+            <div class= mn>y +</div>
+            <input type="number" name="z3" #z3="ngModel" [(ngModel)]="Matriz[2][2]">
+
+            <div class= mn>z =</div>
+            <input type="number" name="a3" #a3="ngModel" [(ngModel)]="Matriz[2][3]">
+
+            </span><br>
+            <br>
+
+            <button class="btn btn-danger ml-4" type="submit">Calcular</button>
+            <br>
+            <br>
+
+            <div class="mn">X =</div>
+            <input type="number" name="X" #X="ngModel" [(ngModel)]="MatrizXYZ[0][0]">
+            <br>
+            <div class="mn">Y =</div>
+            <input type="number" name="Y" #Y="ngModel" [(ngModel)]="MatrizXYZ[0][1]">
+            <br>
+            <div class="mn">Z =</div>
+            <input type="number" name="Z" #Z="ngModel" [(ngModel)]="MatrizXYZ[0][2]">
+
+        </form>
+        <br>
+
+
+    </section>
+
+</body>

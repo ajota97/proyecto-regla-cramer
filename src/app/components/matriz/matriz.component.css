@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+p {
+    color: white;
+}
+
+input {
+    color: white
+}
+
+body {
+    background-color: rgb(53, 53, 53);
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 35px 0px 100px 0px;
+}
+
+body {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+Matrix form CSS/ .matrix {
+    margin: 35px;
+    color: white;
+}
+
+.matrix input {
+    width: 10%;
+    color: white;
+    padding: 2px 4px;
+    background: transparent;
+    margin: 5px 5px;
+    border: 1px solid white;
+}
+
+.mn {
+    display: inline-block;
+    vertical-align: baseline;
+    color: white;
+}
